@@ -37,3 +37,4 @@ Cargo.lock
 
 go/day04/*
 rust/day04/*
+awk/*
