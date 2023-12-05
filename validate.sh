@@ -84,7 +84,7 @@ else
         echo "Task not specified."
         exit 1
     fi
-    
+
     day_index=${day#day}  
     echo "Validating $lang $day $task"
     result=$(/bin/bash run.sh -l "$lang" -d "$day" -t "$task" | tail -n1)

@@ -45,6 +45,8 @@ if [[ "$runs" == "" ]]; then
     runs=500
 fi
 
+source ./env/bin/activate
+
 # Run the appropriate command
 if [[ "$lang" == "rust" ]]; then
     cd ./rust/$day/$task
@@ -53,6 +55,10 @@ if [[ "$lang" == "rust" ]]; then
 elif [[ "$lang" == "go" ]]; then
     cd ./go/$day
     cat ../../data/$day/input.txt | go run ${task}.go
+    cd - > /dev/null
+elif [[ "$lang" == "polars" ]]; then
+    cd ./polars/$day
+    cat ../../data/$day/input.txt | python3 ${task}.py
     cd - > /dev/null
 else
     echo "Unknown language: $lang"

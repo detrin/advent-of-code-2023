@@ -56,6 +56,10 @@ elif [[ "$lang" == "go" ]]; then
     go build ${task}.go
     cd - > /dev/null
     hyperfine --warmup 100 --runs $runs "cat ./data/$day/input.txt | ./go/$day/$task" | sed -En 's/^  Time \(mean ± σ\):[[:space:]]+([^[]+).*/\1/p' | tr -s ' '
+elif [[ "$lang" == "polars" ]]; then
+    cd ./polars/$day
+    hyperfine --warmup 100 --runs $runs "cat ../../data/$day/input.txt | python3 ${task}.py" | sed -En 's/^  Time \(mean ± σ\):[[:space:]]+([^[]+).*/\1/p' | tr -s ' '
+    cd - > /dev/null
 else
     echo "Unknown language: $lang"
     exit 1
