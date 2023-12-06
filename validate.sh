@@ -32,6 +32,8 @@ task1_answers=(
     2679        # Day02
     560670      # Day03
     24542       # Day04
+    309796150   # Day05
+    1313763     # Day06
 )
 task2_answers=(
     0 
@@ -39,6 +41,8 @@ task2_answers=(
     77607       # Day02
     91622824    # Day03
     8736438     # Day04
+    50716416    # Day05
+    3412343720  # Day06
 )
 
 if [[ "$all" == "true" ]]; then
