@@ -17,3 +17,5 @@ Advent of code 2023 in golang and in rust
 | Day 5 Task 2 | 3.7 ms ± 2.0 ms  | 3.9 ms ± 1.6 ms  |
 | Day 6 Task 1 | 2.3 ms ± 4.5 ms  | 5.0 ms ± 4.7 ms  |
 | Day 6 Task 2 | 3.0 ms ± 4.1 ms  | 6.5 ms ± 5.7 ms  |
+| Day 7 Task 1 | 3.8 ms ± 4.5 ms  | 4.8 ms ± 1.3 ms  |
+| Day 7 Task 2 | 3.5 ms ± 1.4 ms  | 4.4 ms ± 1.3 ms  |
