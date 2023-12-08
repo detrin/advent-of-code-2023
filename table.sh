@@ -15,8 +15,10 @@ runs2=100
 # go_d05_t2=$(./benchmark.sh -l go -d day05 -t task2 -r $runs1 2>/dev/null | tail -n1)
 # go_d06_t1=$(./benchmark.sh -l go -d day06 -t task1 -r $runs1 2>/dev/null | tail -n1)
 # go_d06_t2=$(./benchmark.sh -l go -d day06 -t task2 -r $runs1 2>/dev/null | tail -n1)
-go_d07_t1=$(./benchmark.sh -l go -d day07 -t task1 -r $runs1 2>/dev/null | tail -n1)
-go_d07_t2=$(./benchmark.sh -l go -d day07 -t task2 -r $runs1 2>/dev/null | tail -n1)
+# go_d07_t1=$(./benchmark.sh -l go -d day07 -t task1 -r $runs1 2>/dev/null | tail -n1)
+# go_d07_t2=$(./benchmark.sh -l go -d day07 -t task2 -r $runs1 2>/dev/null | tail -n1)
+go_d08_t1=$(./benchmark.sh -l go -d day08 -t task1 -r $runs1 2>/dev/null | tail -n1)
+go_d08_t2=$(./benchmark.sh -l go -d day08 -t task2 -r $runs1 2>/dev/null | tail -n1)
 
 # rust_d01_t1=$(./benchmark.sh -l rust -d day01 -t task1 -r $runs1 2>/dev/null | tail -n1)
 # rust_d01_t2=$(./benchmark.sh -l rust -d day01 -t task2 -r $runs1 2>/dev/null | tail -n1)
@@ -30,8 +32,10 @@ go_d07_t2=$(./benchmark.sh -l go -d day07 -t task2 -r $runs1 2>/dev/null | tail 
 # rust_d05_t2=$(./benchmark.sh -l rust -d day05 -t task2 -r $runs1 2>/dev/null | tail -n1)
 # rust_d06_t1=$(./benchmark.sh -l rust -d day06 -t task1 -r $runs1 2>/dev/null | tail -n1)
 # rust_d06_t2=$(./benchmark.sh -l rust -d day06 -t task2 -r $runs1 2>/dev/null | tail -n1)
-rust_d07_t1=$(./benchmark.sh -l rust -d day07 -t task1 -r $runs1 2>/dev/null | tail -n1)
-rust_d07_t2=$(./benchmark.sh -l rust -d day07 -t task2 -r $runs1 2>/dev/null | tail -n1)
+# rust_d07_t1=$(./benchmark.sh -l rust -d day07 -t task1 -r $runs1 2>/dev/null | tail -n1)
+# rust_d07_t2=$(./benchmark.sh -l rust -d day07 -t task2 -r $runs1 2>/dev/null | tail -n1)
+rust_d08_t1=$(./benchmark.sh -l rust -d day08 -t task1 -r $runs1 2>/dev/null | tail -n1)
+rust_d08_t2=$(./benchmark.sh -l rust -d day08 -t task2 -r $runs1 2>/dev/null | tail -n1)
 
 # polars_d01_t1=$(./benchmark.sh -l polars -d day01 -t task1 -r $runs2 2>/dev/null | tail -n1)
 # polars_d01_t2=$(./benchmark.sh -l polars -d day01 -t task2 -r $runs2 2>/dev/null | tail -n1)
@@ -52,3 +56,5 @@ echo "| Day 6 Task 1 | $rust_d06_t1 | $go_d06_t1 |"
 echo "| Day 6 Task 2 | $rust_d06_t2 | $go_d06_t2 |"
 echo "| Day 7 Task 1 | $rust_d07_t1 | $go_d07_t1 |"
 echo "| Day 7 Task 2 | $rust_d07_t2 | $go_d07_t2 |"
+echo "| Day 8 Task 1 | $rust_d08_t1 | $go_d08_t1 |"
+echo "| Day 8 Task 2 | $rust_d08_t2 | $go_d08_t2 |"
