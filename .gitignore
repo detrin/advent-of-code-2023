@@ -196,6 +196,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-go/day08/*
-rust/day08/*
+go/day09/*
+rust/day09/*
 awk/*
