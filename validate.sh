@@ -51,6 +51,7 @@ task2_answers=(
     142997638331814 # Day08
     1211            # Day09
     417             # Day10
+    702152204842    # Day11
 )
 
 if [[ "$all" == "true" ]]; then
