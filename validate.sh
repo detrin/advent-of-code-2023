@@ -33,11 +33,13 @@ task1_answers=(
     560670      # Day03
     24542       # Day04
     309796150   # Day05
-    1313763     # Day06
-    24845353130 # Day07
+    131376      # Day06
+    248453531   # Day07
     18157       # Day08
     1806615041  # Day09
     7005        # Day10
+    9609130     # Day11
+    7506        # Day11
 )
 task2_answers=(
     0 
@@ -46,16 +48,17 @@ task2_answers=(
     91622824        # Day03
     8736438         # Day04
     50716416        # Day05
-    3412343720      # Day06
-    24845353130     # Day07
+    34123437        # Day06
+    248781813       # Day07
     142997638331814 # Day08
     1211            # Day09
     417             # Day10
     702152204842    # Day11
+    548241300348335 # Day12
 )
 
 if [[ "$all" == "true" ]]; then
-    for day_i in $(seq 1 4); do
+    for day_i in $(seq 1 12); do
         for lang in rust go; do
             day_index=$(printf "%02d" $day_i)
             day="day$day_index"

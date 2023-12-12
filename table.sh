@@ -20,12 +20,14 @@ runs3=500
 # go_d07_t2=$(./benchmark.sh -l go -d day07 -t task2 -r $runs1 2>/dev/null | tail -n1)
 # go_d08_t1=$(./benchmark.sh -l go -d day08 -t task1 -r $runs1 2>/dev/null | tail -n1)
 # go_d08_t2=$(./benchmark.sh -l go -d day08 -t task2 -r $runs1 2>/dev/null | tail -n1)
-go_d09_t1=$(./benchmark.sh -l go -d day09 -t task1 -r $runs1 2>/dev/null | tail -n1)
-go_d09_t2=$(./benchmark.sh -l go -d day09 -t task2 -r $runs1 2>/dev/null | tail -n1)
+# go_d09_t1=$(./benchmark.sh -l go -d day09 -t task1 -r $runs1 2>/dev/null | tail -n1)
+# go_d09_t2=$(./benchmark.sh -l go -d day09 -t task2 -r $runs1 2>/dev/null | tail -n1)
 # go_d10_t1=$(./benchmark.sh -l go -d day10 -t task1 -r $runs3 2>/dev/null | tail -n1)
 # go_d10_t2=$(./benchmark.sh -l go -d day10 -t task2 -r $runs3 2>/dev/null | tail -n1)
 # go_d11_t1=$(./benchmark.sh -l go -d day11 -t task1 -r $runs1 2>/dev/null | tail -n1)
 # go_d11_t2=$(./benchmark.sh -l go -d day11 -t task2 -r $runs1 2>/dev/null | tail -n1)
+go_d12_t1=$(./benchmark.sh -l go -d day12 -t task1 -r $runs3 2>/dev/null | tail -n1)
+go_d12_t2=$(./benchmark.sh -l go -d day12 -t task2 -r $runs3 2>/dev/null | tail -n1)
 
 # rust_d01_t1=$(./benchmark.sh -l rust -d day01 -t task1 -r $runs1 2>/dev/null | tail -n1)
 # rust_d01_t2=$(./benchmark.sh -l rust -d day01 -t task2 -r $runs1 2>/dev/null | tail -n1)
@@ -43,12 +45,14 @@ go_d09_t2=$(./benchmark.sh -l go -d day09 -t task2 -r $runs1 2>/dev/null | tail 
 # rust_d07_t2=$(./benchmark.sh -l rust -d day07 -t task2 -r $runs1 2>/dev/null | tail -n1)
 # rust_d08_t1=$(./benchmark.sh -l rust -d day08 -t task1 -r $runs1 2>/dev/null | tail -n1)
 # rust_d08_t2=$(./benchmark.sh -l rust -d day08 -t task2 -r $runs1 2>/dev/null | tail -n1)
-rust_d09_t1=$(./benchmark.sh -l rust -d day09 -t task1 -r $runs1 2>/dev/null | tail -n1)
-rust_d09_t2=$(./benchmark.sh -l rust -d day09 -t task2 -r $runs1 2>/dev/null | tail -n1)
+# rust_d09_t1=$(./benchmark.sh -l rust -d day09 -t task1 -r $runs1 2>/dev/null | tail -n1)
+# rust_d09_t2=$(./benchmark.sh -l rust -d day09 -t task2 -r $runs1 2>/dev/null | tail -n1)
 # rust_d10_t1=$(./benchmark.sh -l rust -d day10 -t task1 -r $runs3 2>/dev/null | tail -n1)
 # rust_d10_t2=$(./benchmark.sh -l rust -d day10 -t task2 -r $runs3 2>/dev/null | tail -n1)
 # rust_d11_t1=$(./benchmark.sh -l rust -d day11 -t task1 -r $runs1 2>/dev/null | tail -n1)
 # rust_d11_t2=$(./benchmark.sh -l rust -d day11 -t task2 -r $runs1 2>/dev/null | tail -n1)
+rust_d12_t1=$(./benchmark.sh -l rust -d day12 -t task1 -r $runs3 2>/dev/null | tail -n1)
+rust_d12_t2=$(./benchmark.sh -l rust -d day12 -t task2 -r $runs3 2>/dev/null | tail -n1)
 
 # polars_d01_t1=$(./benchmark.sh -l polars -d day01 -t task1 -r $runs2 2>/dev/null | tail -n1)
 # polars_d01_t2=$(./benchmark.sh -l polars -d day01 -t task2 -r $runs2 2>/dev/null | tail -n1)
@@ -77,3 +81,5 @@ echo "| Day 10 Task 1 | $rust_d10_t1 | $go_d10_t1 |"
 echo "| Day 10 Task 2 | $rust_d10_t2 | $go_d10_t2 |"
 echo "| Day 11 Task 1 | $rust_d11_t1 | $go_d11_t1 |"
 echo "| Day 11 Task 2 | $rust_d11_t2 | $go_d11_t2 |"
+echo "| Day 12 Task 1 | $rust_d12_t1 | $go_d12_t1 |"
+echo "| Day 12 Task 2 | $rust_d12_t2 | $go_d12_t2 |"
